@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.a4{
+    color: white;
+    position: absolute;
+    left: 1380px;
+    top: 30px;
+}
+.a2,.a3{
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 70px;
+}
+.a3{
+    left: 120px;
+    top: 50px;
+}
+
+
+.a1{
+    color: white;
+    position: absolute;
+    left: 1380px;
+    top: 50px;
+    font-size: 25px;
+}
+
+
+.stopwatch {
+    text-align: center;
+    background-color: rgb(235, 214, 214);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(250, 248, 248, 0.947);
+}
+
+#display {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    transition: 1s;
+    border-radius: 9px;
+}
+.buttons button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color: black;">
+    <div class="a2">PRASUNET</div>
+    <div class="a3">Task-II</div>
+    <div class="a4">IST</div>
+
+    <div class="a1" id="a1">Time</div>
+    <script >
+         function updateClock() {
+            var now = new Date(),
+            time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds()
+            document.getElementById('a1').innerHTML = time
+
+    setTimeout(updateClock, 1000);
+}
+updateClock();
+        </script>
+    <div class="stopwatch">
+        <h1>Stopwatch</h1>
+        <div id="display">00:00:00</div>
+        <div class="buttons">
+            <button id="startStopBtn" onclick="startStop()">Start</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+            <button id="lapBtn" onclick="recordLap()">Lap</button>
+        </div>
+        <div id="laps"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
